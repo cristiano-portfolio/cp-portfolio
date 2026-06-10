@@ -21,7 +21,7 @@ export function Contact() {
       const body = encodeURIComponent(
         `Hi Cristiano,\n\nI came across your portfolio and would like to connect.\n\n(Reply-to: ${trimmed})`
       )
-      window.location.href = `mailto:hello@cristianopontes.com?subject=${subject}&body=${body}`
+      window.location.href = `mailto:pontes.cristiano@hotmail.com?subject=${subject}&body=${body}`
       setStatus('idle')
       return
     }
@@ -88,12 +88,12 @@ export function Contact() {
         )}
 
         <div className="contact-alt reveal d2">
-          <a href="mailto:hello@cristianopontes.com">
+          <a href="mailto:pontes.cristiano@hotmail.com">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
               <rect x={2} y={4} width={20} height={16} rx={2} />
               <path d="m22 7-10 6L2 7" />
             </svg>
-            hello@cristianopontes.com
+            pontes.cristiano@hotmail.com
           </a>
           <a
             href="https://www.linkedin.com/in/cristiano-pontes-bb3b7744/"
