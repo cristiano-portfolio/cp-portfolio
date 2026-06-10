@@ -70,13 +70,7 @@ export function Hero() {
               priority
             />
           </div>
-          <div className="portrait-badge">
-            <span className="dot" />
-            <div>
-              <b>Open to roles</b>
-              <span>MedTech · Healthcare · B2B SaaS</span>
-            </div>
-          </div>
+
         </div>
       </div>
 
