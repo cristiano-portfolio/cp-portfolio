@@ -24,16 +24,16 @@ export function Experience() {
             <div className="exp-body">
               <div className="exp-row">
                 <h3>PRP Labs</h3>
-                <span className="dates">2024 — Present</span>
+                <span className="dates">2024-Present</span>
               </div>
               <div className="role">
                 Director of Sales &amp; Marketing ·{' '}
-                <span style={{ color: 'var(--text-muted)', fontWeight: 500 }}>Mar 2025 — Present</span>
+                <span style={{ color: 'var(--text-muted)', fontWeight: 500 }}>Mar 2025-Present</span>
               </div>
-              <div className="role sub">Sales &amp; Marketing Manager · Jun 2024 — Mar 2025</div>
+              <div className="role sub">Sales &amp; Marketing Manager · Jun 2024-Mar 2025</div>
               <ul>
                 <li>
-                  Built the entire commercial function from zero as the sole commercial hire — marketing,
+                  Built the entire commercial function from zero as the sole commercial hire-marketing,
                   demand gen, sales, and RevOps.
                 </li>
                 <li>
@@ -60,12 +60,12 @@ export function Experience() {
             <div className="exp-body">
               <div className="exp-row">
                 <h3>Sparkling Clean Pro</h3>
-                <span className="dates">2023 — 2024</span>
+                <span className="dates">2023-2024</span>
               </div>
               <div className="role">Marketing Consultant</div>
               <ul>
                 <li>
-                  Advised on demand generation and conversion strategy — paid, organic, and lifecycle.
+                  Advised on demand generation and conversion strategy-paid, organic, and lifecycle.
                 </li>
                 <li>
                   Stood up tracking and reporting to tie marketing spend to booked revenue.
@@ -88,7 +88,7 @@ export function Experience() {
             <div className="exp-body">
               <div className="exp-row">
                 <h3>Pumper Caddy</h3>
-                <span className="dates">2022 — 2023</span>
+                <span className="dates">2022-2023</span>
               </div>
               <div className="role">Digital Marketing Manager</div>
               <ul>
@@ -113,7 +113,7 @@ export function Experience() {
             </div>
             <div className="earlier-item">
               <h4>B2B Sales &amp; Account Management</h4>
-              <p>Life insurance, legal, finance &amp; project management — Brazil</p>
+              <p>Life insurance, legal, finance &amp; project management-Brazil</p>
             </div>
             <div className="earlier-item">
               <h4>International Markets</h4>

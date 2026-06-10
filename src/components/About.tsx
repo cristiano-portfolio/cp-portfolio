@@ -23,7 +23,7 @@ export function About() {
               </svg>
             }
             title="Operator mindset"
-            body="I build commercial functions from zero — systems, process, and pipeline, not just plans."
+            body="I build commercial functions from zero: systems, process, and pipeline, not just plans."
             delay="d1"
           />
           <ValueCard
@@ -34,7 +34,7 @@ export function About() {
               </svg>
             }
             title="Full-funnel ownership"
-            body="Strategy and execution, top to bottom — brand, demand gen, sales, and RevOps under one roof."
+            body="Strategy and execution, top to bottom: brand, demand gen, sales, and RevOps under one roof."
             delay="d2"
           />
           <ValueCard

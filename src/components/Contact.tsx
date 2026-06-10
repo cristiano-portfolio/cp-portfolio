@@ -17,7 +17,7 @@ export function Contact() {
 
     if (FORMSPREE_URL.includes('YOUR_FORM_ID')) {
       // Mailto fallback when Formspree isn't configured
-      const subject = encodeURIComponent("Let's talk — opportunity for Cristiano")
+      const subject = encodeURIComponent("Let's talk - opportunity for Cristiano")
       const body = encodeURIComponent(
         `Hi Cristiano,\n\nI came across your portfolio and would like to connect.\n\n(Reply-to: ${trimmed})`
       )
@@ -50,14 +50,14 @@ export function Contact() {
           <span className="eyebrow">Get in touch</span>
           <h2>Hiring? Let&apos;s talk.</h2>
           <p className="lede">
-            If you&apos;re building a commercial engine in MedTech, healthcare, or B2B SaaS — or need
-            someone who can own it end to end — I&apos;d love to hear from you.
+            If you&apos;re building a commercial engine in MedTech, healthcare, or B2B SaaS, or need
+            someone who can own it end to end, I&apos;d love to hear from you.
           </p>
         </div>
 
         {status === 'done' ? (
           <p className="reveal d1" style={{ marginTop: 34, color: 'rgba(255,255,255,0.9)', fontSize: 17 }}>
-            Got it — I&apos;ll be in touch soon.
+            Got it. I&apos;ll be in touch soon.
           </p>
         ) : (
           <form className="contact-form reveal d1" onSubmit={handleSubmit} noValidate>
@@ -81,7 +81,7 @@ export function Contact() {
             </button>
             {status === 'error' && (
               <p style={{ color: 'rgba(255,100,100,0.9)', fontSize: 14, width: '100%', marginTop: -4 }}>
-                Something went wrong — please email me directly below.
+                Something went wrong. Please email me directly below.
               </p>
             )}
           </form>

@@ -4,7 +4,7 @@ export function Results() {
       <div className="wrap">
         <div className="head reveal" style={{ marginBottom: 42 }}>
           <span className="eyebrow">The Results</span>
-          <h2>Revenue I&apos;ve built — not just managed.</h2>
+          <h2>Revenue I&apos;ve built, not just managed.</h2>
         </div>
 
         <div className="stats">
@@ -19,7 +19,7 @@ export function Results() {
           <div className="stat reveal d2">
             <div className="num">87%</div>
             <div className="desc">
-              Revenue growth in 10 months — built the entire function from zero.
+              Revenue growth in 10 months. Built the entire function from zero.
             </div>
             <div className="co">PRP Labs</div>
           </div>
@@ -27,7 +27,7 @@ export function Results() {
           <div className="stat reveal d3">
             <div className="num">6-figure</div>
             <div className="desc">
-              Revenue driven via paid, SEO &amp; email — full digital demand engine.
+              Revenue driven via paid, SEO &amp; email. Full digital demand engine.
             </div>
             <div className="co">Pumper Caddy</div>
           </div>

@@ -17,13 +17,13 @@ export function Hero() {
           <h1 className="reveal d1">Cristiano Pontes</h1>
 
           <p className="subhead reveal d2">
-            B2B MedTech Sales &amp; Marketing Leader — I build{' '}
+            B2B MedTech Sales &amp; Marketing Leader. I build{' '}
             <span className="accent">full-funnel commercial engines</span> from zero.
           </p>
 
           <p className="support reveal d3">
             Director of Sales &amp; Marketing at PRP Labs. I own the full revenue
-            P&amp;L — marketing, demand gen, sales — and scale it with limited resources.
+            P&amp;L: marketing, demand gen, sales. I scale it with limited resources.
           </p>
 
           <div className="hero-cta reveal d3">
@@ -46,7 +46,7 @@ export function Hero() {
               View LinkedIn
             </a>
 
-            <a href="/resume.pdf" download className="btn btn-ghost">
+            <a href="/resume.docx" download="Cristiano Pontes Resume.docx" className="btn btn-ghost">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                 <path d="M7 10l5 5 5-5" />
