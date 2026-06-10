@@ -2,39 +2,28 @@
 
 import { FormEvent, useState } from 'react'
 
-const FORMSPREE_URL = 'https://formspree.io/f/YOUR_FORM_ID'
-
 export function Contact() {
-  const [email, setEmail] = useState('')
-  const [status, setStatus] = useState<'idle' | 'submitting' | 'done' | 'error'>('idle')
+  const [email, setEmail]     = useState('')
+  const [message, setMessage] = useState('')
+  const [status, setStatus]   = useState<'idle' | 'submitting' | 'done' | 'error'>('idle')
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    const trimmed = email.trim()
-    if (!trimmed) return
+    const trimmedEmail = email.trim()
+    if (!trimmedEmail) return
 
     setStatus('submitting')
 
-    if (FORMSPREE_URL.includes('YOUR_FORM_ID')) {
-      // Mailto fallback when Formspree isn't configured
-      const subject = encodeURIComponent("Let's talk - opportunity for Cristiano")
-      const body = encodeURIComponent(
-        `Hi Cristiano,\n\nI came across your portfolio and would like to connect.\n\n(Reply-to: ${trimmed})`
-      )
-      window.location.href = `mailto:pontes.cristiano@hotmail.com?subject=${subject}&body=${body}`
-      setStatus('idle')
-      return
-    }
-
     try {
-      const res = await fetch(FORMSPREE_URL, {
+      const res = await fetch('/api/contact', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({ email: trimmed }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: trimmedEmail, message }),
       })
       if (res.ok) {
         setStatus('done')
         setEmail('')
+        setMessage('')
       } else {
         setStatus('error')
       }
@@ -70,6 +59,16 @@ export function Contact() {
               required
               aria-label="Your email address"
               disabled={status === 'submitting'}
+            />
+            <textarea
+              name="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              placeholder="Your message (optional)"
+              aria-label="Your message"
+              disabled={status === 'submitting'}
+              rows={3}
+              style={{ resize: 'vertical' }}
             />
             <button type="submit" className="btn btn-primary" disabled={status === 'submitting'}>
               {status === 'submitting' ? 'Sending…' : 'Send message'}
